@@ -13,8 +13,8 @@
   --color-blue900: hsl(208, 49%, 24%);
 
   --color-white: hsl(0, 100%, 100%);
-  --gray600: hsl(207, 13%, 34%);
-  --gray900: hsl(240, 10%, 16%);
+  --color-gray600: hsl(207, 13%, 34%);
+  --color-gray900: hsl(240, 10%, 16%);
   --color-orange300: hsl(13, 100%, 72%);
   --color-red550: hsl(353, 100%, 62%);
   --color-purple950: hsl(237, 17%, 21%);
@@ -32,4 +32,10 @@ h4,
 h5,
 h6 {
   font-family: var(--font-overpass);
+}
+.heroBg {
+  background-image: url("/bg-pattern-intro-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

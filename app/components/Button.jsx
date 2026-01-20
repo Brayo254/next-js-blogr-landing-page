@@ -1,13 +1,16 @@
 import React from "react";
 import Link from "next/link";
 
-const Button = () => {
+const Button = ({ text, variant = "primary" }) => {
+  const variantStyles = {
+    secondary: "text-white hover:bg-red500 rounded-full cursor-pointer p-2 border border-white",
+    primary:
+      "bg-white rounded-full hover:bg-red500 hover:text-white p-2 cursor-pointer",
+  };
   return (
     <>
       <Link href="/signup">
-        <button className="cursor-pointer bg-white text-red500 px-8 py-3 rounded-full font-medium hover:bg-red500 hover:text-white">
-          Signup
-        </button>
+        <button className={`${variantStyles[variant]}`}> {text}</button>
       </Link>
     </>
   );
