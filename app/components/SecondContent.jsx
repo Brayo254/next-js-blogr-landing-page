@@ -1,26 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
-const Content = () => {
+const SecondContent = () => {
   return (
     <>
-      <section className="p-3 flex justify-center items-center md:flex flex-col md:w-full md:h-[90vh] md:justify-center md:items-center md:p-7 md:mb-10">
-        {/* heading */}
-        <div className="mt-10">
-          <h2 className="text-2xl md:text-4xl font-bold">
-            Designed for the future
-          </h2>
-        </div>
+      <section className="p-3 flex justify-center items-center md:flex flex-col-reverse md:w-full md:h-[90vh] md:justify-center md:items-center md:p-10 md:mb-10">
         {/* left & right */}
         <div className="flex p-10 flex-col-reverse md:flex md:flex-row md:justify-between md:items-center md:w-full md:p-10">
           {/* left section */}
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center md:order-2">
             {/* top div */}
             <div className="mb-5 md:flex md:flex-col md:p-5 md:justify-center md:items-center md:w-100 md:h-50">
               <div>
-                <h2 className="text-2xl font-medium">
-                  Introducing an extensible editor
-                </h2>
+                <h2 className="text-2xl font-medium">Free, open, simple</h2>
               </div>
               <div>
                 <p>
@@ -34,9 +26,7 @@ const Content = () => {
             {/* bottom */}
             <div className="md:flex md:flex-col md:p-5 md:justify-center md:items-center md:w-100 md:h-50">
               <div>
-                <h2 className="text-2xl font-medium">
-                  Robust content management
-                </h2>
+                <h2 className="text-2xl font-medium">Powerful Tooling</h2>
               </div>
               <div>
                 <p>
@@ -49,11 +39,11 @@ const Content = () => {
             </div>
           </div>
 
-          {/* right div */}
+          {/* right section */}
 
-          <div className="">
+          <div className="md:flex md:order-1">
             <Image
-              src="illustration-editor-desktop.svg"
+              src="/illustration-laptop-desktop.svg"
               width={500}
               height={500}
               alt="desktop illustration"
@@ -65,4 +55,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default SecondContent;

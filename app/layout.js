@@ -1,5 +1,6 @@
 import { Overpass, Ubuntu } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 const overpass = Overpass({
   variable: "--font-overpass",
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${overpass.variable} ${ubuntu.variable} antialiased`}>
         {children}
+        <Footer />
       </body>
     </html>
   );
