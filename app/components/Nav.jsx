@@ -97,7 +97,7 @@ const Nav = () => {
                 </div>
               </div>
               {open && (
-                <div className=" absolute top-full left-0 bg-white w-full pt-2 h-70 flex flex-col items-center">
+                <div className=" absolute top-full left-0 bg-gray600 w-full pt-2 h-70 flex flex-col items-center">
                   <Link className="mt-4" href="#">
                     Contact
                   </Link>
