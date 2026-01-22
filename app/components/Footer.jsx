@@ -5,83 +5,119 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="flex w-full justify-center items-center p-8 flex-col bg-gray-950 md:rounded-tr-[100px] md:flex md:flex-row md:items-center md:justify-between md:p-18">
-        <div className="mb-7">
-          <Image src="/logo.svg" width={100} height={100} alt="logo" />
-        </div>
-        <div className="flex flex-col items-center mr-10 mb-5">
-          <div className="text-white text-xl">
-            <h6>Product</h6>
+      <footer className="w-full bg-gray-950 md:rounded-tr-[100px] py-8 md:py-18">
+        <div className="container mx-auto px-4 flex flex-col items-center md:flex-row md:items-start md:justify-between">
+          {/* Logo - Centered on mobile, left on desktop */}
+          <div className="flex justify-center w-full md:w-auto mb-8 md:mb-0">
+            <Image
+              src="/logo.svg"
+              width={100}
+              height={100}
+              alt="logo"
+              className="md:ml-4"
+            />
           </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Overview
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Pricing
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Marketplace
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Features
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Integration
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-col items-center mr-10 mt-7">
-          <div>
-            <h6 className="text-white text-xl">Company</h6>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              About
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Team
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Blog
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Careers
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-col items-center mr-10 mt-7">
-          <div>
-            <h6 className="text-white text-xl">Connect</h6>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Contact
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              Newsletter
-            </Link>
-          </div>
-          <div>
-            <Link className="text-white text-xl" href="#">
-              LinkedIn
-            </Link>
+
+          {/* Links Grid */}
+          <div className="w-full md:w-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            {/* Product Column */}
+            <div className="flex flex-col items-center md:items-start">
+              <div className="text-white text-xl font-semibold mb-4">
+                <h6>Product</h6>
+              </div>
+              <div className="flex flex-col items-center md:items-start space-y-2">
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Overview
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Pricing
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Marketplace
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Features
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Integrations
+                </Link>
+              </div>
+            </div>
+
+            {/* Company Column */}
+            <div className="flex flex-col items-center md:items-start">
+              <div className="text-white text-xl font-semibold mb-4">
+                <h6>Company</h6>
+              </div>
+              <div className="flex flex-col items-center md:items-start space-y-2">
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  About
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Team
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Blog
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Careers
+                </Link>
+              </div>
+            </div>
+
+            {/* Connect Column */}
+            <div className="flex flex-col items-center md:items-start">
+              <div className="text-white text-xl font-semibold mb-4">
+                <h6>Connect</h6>
+              </div>
+              <div className="flex flex-col items-center md:items-start space-y-2 pb-4 md:pb-0">
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Contact
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  Newsletter
+                </Link>
+                <Link
+                  className="text-white text-lg hover:text-gray-300 transition-colors"
+                  href="#"
+                >
+                  LinkedIn
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
