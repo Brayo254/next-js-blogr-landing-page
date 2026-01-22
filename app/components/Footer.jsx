@@ -5,11 +5,11 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="flex w-full h-[500px] pl-14 pr-14 md:h-75 bg-gray-950 md:rounded-tr-[100px] md:flex md:flex-row md:items-center md:justify-between md:p-18">
-        <div>
+      <footer className="flex w-full justify-center items-center p-8 flex-col bg-gray-950 md:rounded-tr-[100px] md:flex md:flex-row md:items-center md:justify-between md:p-18">
+        <div className="mb-7">
           <Image src="/logo.svg" width={100} height={100} alt="logo" />
         </div>
-        <div className="flex flex-col items-center mr-10">
+        <div className="flex flex-col items-center mr-10 mb-5">
           <div className="text-white text-xl">
             <h6>Product</h6>
           </div>
@@ -39,7 +39,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center mr-10">
+        <div className="flex flex-col items-center mr-10 mt-7">
           <div>
             <h6 className="text-white text-xl">Company</h6>
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center mr-10">
+        <div className="flex flex-col items-center mr-10 mt-7">
           <div>
             <h6 className="text-white text-xl">Connect</h6>
           </div>
