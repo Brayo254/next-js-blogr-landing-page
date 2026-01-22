@@ -78,7 +78,7 @@ const Nav = () => {
 
       {/* mobile nav */}
       {toggle && (
-        <nav className="md:hidden flex relative w-full h-52 flex-col bg-red500 justify-between items-center px-10 py-8">
+        <nav className="md:hidden flex relative w-full flex-col bg-red500 items-start px-10 py-8">
           <div className="flex flex-col justify-center">
             <div className="mr-4">
               <Link href="#">Product</Link>
@@ -97,7 +97,7 @@ const Nav = () => {
                 </div>
               </div>
               {open && (
-                <div className="absolute bg-gray600 w-64 pt-2 h-80 flex flex-col justify-center items-center">
+                <div className=" absolute top-full left-0 bg-white w-full pt-2 h-70 flex flex-col items-center">
                   <Link className="mt-4" href="#">
                     Contact
                   </Link>
@@ -113,7 +113,7 @@ const Nav = () => {
                     <Link className="mb-6" href="#">
                       Login
                     </Link>
-                    <Button text="signup"/>
+                    <Button text="signup" />
                   </div>
                 </div>
               )}
