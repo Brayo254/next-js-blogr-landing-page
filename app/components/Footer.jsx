@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const date = new Date();
+
+  const year = date.getFullYear();
   return (
     <>
       <footer className="w-full bg-gray-950 md:rounded-tr-[100px] py-8 md:py-18">
@@ -119,6 +122,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        <div className="justify-center">
+          <p className="text-white">Designed by Sunbeam Kenya &copy; {year}</p>
+        </div>
         </div>
       </footer>
     </>
